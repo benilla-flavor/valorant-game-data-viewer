@@ -1,0 +1,337 @@
+/* General Reset */
+body, h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #0f1923; /* Valorant dark theme */
+  color: #eaeaea;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #ff4655;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #c5c5c5;
+}
+
+/* Main Content */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Agents List */
+.agents-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+}
+
+.agent-card {
+  background-color: #1c252e;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.agent-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.agent-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.agent-card h3 {
+  font-size: 1.1rem;
+  color: #eaeaea;
+  margin-top: 5px;
+}
+
+/* Agent Details Panel */
+.agent-details {
+  background-color: #1c252e;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  margin-top: 40px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.agent-details.hidden {
+  display: none;
+}
+
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details-header h2 {
+  font-size: 2rem;
+  color: #ff4655;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #eaeaea;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.close-button:hover {
+  transform: scale(1.2);
+}
+
+.agent-info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.agent-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.agent-description {
+  font-size: 1rem;
+  color: #c5c5c5;
+  text-align: center;
+}
+
+.agent-abilities {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.agent-abilities li {
+  background-color: #29313a;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.agent-abilities li img {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+/* Bundles List */
+.bundles-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+}
+
+.bundle-card {
+  background-color: #1c252e;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.bundle-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.bundle-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.bundle-card h3 {
+  font-size: 1.1rem;
+  color: #eaeaea;
+  margin-top: 5px;
+}
+
+.bundle-details img {
+  max-width: 100%; /* Ensures the image doesn't overflow the container */
+  height: auto;    /* Maintains the aspect ratio */
+  border-radius: 10px; /* Matches the overall design aesthetic */
+  margin: 10px 0; /* Adds some spacing around the image */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow for better visuals */
+}
+
+.bundle-details.hidden {
+  display: none;
+}
+
+.maps-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.map-card {
+  background-color: #1c252e;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.map-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.map-card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #eaeaea;
+}
+
+.map-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Map Details Panel */
+.map-details {
+  background-color: #1c252e;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  margin-top: 40px;
+  animation: fadeIn 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.map-details.hidden {
+  display: none;
+}
+
+.details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details-header h2 {
+  font-size: 2rem;
+  color: #ff4655;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #eaeaea;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.close-button:hover {
+  transform: scale(1.2);
+}
+
+.map-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.map-description, .map-coordinates {
+  font-size: 1rem;
+  color: #c5c5c5;
+}
+
+/* Footer Section */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #c5c5c5;
+  font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .agents-container, .bundles-container {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  header h1 {
+      font-size: 2rem;
+  }
+
+  .agent-details, .bundle-details {
+      padding: 15px;
+  }
+}

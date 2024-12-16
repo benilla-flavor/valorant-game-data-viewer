@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valorant Bundles</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+      <h1>Valorant Bundles</h1>
+      <p>Explore the latest bundles from Valorant.</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <div id="bundles-container" class="bundles-container">
+        <!-- Bundles will be dynamically inserted here -->
+        <p>Loading bundles...</p>
+      </div>
+      
+      <!-- Bundle Details Panel -->
+      <div id="bundle-details" class="bundle-details hidden">
+        <div class="details-header">
+          <h2 id="bundle-name"></h2>
+          <button class="close-button" onclick="closeBundleDetails()">×</button>
+        </div>
+        <div class="bundle-info">
+          <img id="bundle-image" class="bundle-image" src="" alt="Bundle Image">
+          <p id="bundle-description" class="bundle-description">No description available.</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2024 Game Data Viewer. Powered by Valorant API.</p>
+    </footer>
+  </div>
+
+  <script src="bundles.js"></script>
+</body>
+</html>

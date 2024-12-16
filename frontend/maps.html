@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant Maps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Valorant Maps</h1>
+            <p>Explore the tactical maps of Valorant.</p>
+        </header>
+        <main>
+            <div id="maps-container" class="maps-container">
+                <p>Loading maps...</p>
+            </div>
+        
+            <!-- Detailed View Panel -->
+            <div id="map-details" class="map-details hidden">
+                <div class="details-header">
+                    <h2 id="map-name"></h2>
+                    <button class="close-button" onclick="closeMapDetails()">×</button>
+                </div>
+                <img id="map-image" class="map-image" alt="Map Image">
+                <p id="map-description" class="map-description"></p>
+                <p id="map-coordinates" class="map-coordinates"></p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2024 Game Data Viewer. Powered by Valorant API.</p>
+        </footer>
+    </div>
+    <script src="maps.js"></script>
+</body>
+</html>

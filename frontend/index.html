@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Game Data Viewer</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+      <h1>Game Data Viewer</h1>
+      <p>Explore the world of Valorant with detailed data on Agents, Bundles, and Maps.</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="homepage-content">
+      <div class="nav-buttons">
+        <button class="nav-button" onclick="navigateTo('agents.html')">
+          <img src="images/agents-icon.jpg" alt="Agents Icon">
+          <span>View Agents</span>
+        </button>
+        <button class="nav-button" onclick="navigateTo('bundles.html')">
+          <img src="images/bundles-icon.jpeg" alt="Bundles Icon">
+          <span>View Bundles</span>
+        </button>
+        <button class="nav-button" onclick="navigateTo('maps.html')">
+          <img src="images/maps-icon.jpg" alt="Maps Icon">
+          <span>View Maps</span>
+        </button>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Game Data Viewer. Powered by Valorant API.</p>
+    </footer>
+  </div>
+
+  <script>
+    function navigateTo(page) {
+      window.location.href = page;
+    }
+  </script>
+</body>
+</html>

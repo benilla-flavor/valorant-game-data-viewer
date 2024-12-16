@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valorant Agents</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+      <h1>Valorant Agents</h1>
+      <p>Explore the roster of Valorant agents and their unique abilities.</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Agents List -->
+      <section id="agents-container" class="agents-container">
+        <p>Loading agents...</p>
+      </section>
+
+      <!-- Agent Details Panel -->
+      <section id="agent-details" class="agent-details hidden">
+        <div class="details-header">
+          <h2 id="agent-name">Agent Name</h2>
+          <button class="close-button" onclick="closeDetails()">×</button>
+        </div>
+        <div class="agent-info">
+          <img id="agent-image" alt="Agent Image" class="agent-image">
+          <p id="agent-description" class="agent-description">Agent description goes here.</p>
+        </div>
+
+        <!-- Abilities Section -->
+        <h3>Abilities</h3>
+        <ul id="agent-abilities" class="agent-abilities">
+          <li>Ability details will be displayed here.</li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Valorant Agents Viewer. Powered by Valorant API.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
